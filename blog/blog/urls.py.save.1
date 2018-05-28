@@ -1,4 +1,3 @@
-
 """blog URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -16,14 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import include
+from django.conf.urls import include, url
 urlpatterns = [
-    path(r'aboutme/', include('aboutme.urls')),
-    path(r'admin/', admin.site.urls),
+    path('ad/', admin.site.urls),
 ]
 
 #Add URL maps to redirect the base URL to our application
-#from django.views.generic import RedirectView
+from django.views.generic import RedirectView
 #urlpatterns += [
 #    path('', RedirectView.as_view(url='/aboutme/')),
 #]
