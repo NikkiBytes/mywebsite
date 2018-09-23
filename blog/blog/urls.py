@@ -18,17 +18,15 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 urlpatterns = [
-    path(r'blog/', include('myblog.urls')),
-    path(r'aboutme/', include('homepage.urls')),
-    path(r'admin/', admin.site.urls),
+    path('', include('homepage.urls')),
+    path('blog/', include('myblog.urls')),
+    path('aboutme/', include('homepage.urls')),
+    path('admin/', admin.site.urls),
 ]
 
 #Add URL maps to redirect the base URL to our application
 #from django.views.generic import RedirectView
-urlpatterns += [ 
-    path('', RedirectView.as_view(url='/aboutme/')),
 
-]
 # Use static() to add url mapping to serve static files during development (only)
 from django.conf import settings
 from django.conf.urls.static import static
