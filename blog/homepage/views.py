@@ -6,7 +6,7 @@ from django.views.generic import TemplateView, RedirectView
 
 
 class HomeView(TemplateView):
-    template_name = 'homepage.html'
+    template_name = 'modern_design.html'
 class AboutMeView(TemplateView):
     template_name = 'aboutme.html'
 class LabsView(TemplateView):
