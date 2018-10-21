@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -24,23 +25,23 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Avatar image in top left corner -->
   <img src="{% static "/homepage/blackandwhite.png" %}" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
+    <i class="fas fa-terminal w3-xxlarge"></i>
     <p>HOME</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
+    <i class="fas fa-dna w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
   <a href="#cv" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
+    <i class="fas fa-brain w3-xxlarge"></i>
     <p>CV</p>
   </a>
   <a href="#labs" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
+    <i class="fas fa-laptop-code w3-xxlarge"></i>
     <p>LABS</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
+    <i class="fas fa-code-branch w3-xxlarge"></i>
     <p>CONTACT</p>
   </a>
 </nav>
@@ -61,20 +62,35 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h2 class="w3-jumbo" style="color:#660066;"><span class="w3-hide-small"></span>NIKKIBYTES</h2>
-    <p><h3 style="color:#990073;">Computer Scientist || Researcher || Existentialist Thinker</h3></p>
+    <p><h3 style="color:#990073;">Computer Scientist || Researcher || Existentialist Thinker</h3><br></p>
+    <p><h1 style="color: #b3ffb3;" >"Veni, vidi, vici"</h1></p>
     <img src="{% static "homepage/peace2.png" %}" alt="boy" class="w3-image" width="992" height="1108">
-    <p><h3 style="color: #d9b3ff;" >"Highly unlikely but not outside the realm of extreme possibility?" - Fox Mulder (The X-Files)</h3></p>
+
   </header>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+  <div class="w3-content  w3-text-grey w3-padding-64" id="about">
+    <div class="w3-third">
+      <img src="{% static "homepage/brains.png" %}" class="w3-circle" alt="boy"  style="width:100%">
+    </div>
+    <div class="w3-twothird">
     <h2 style="color:#cc0099;">Nichollette Taylor Acosta</h2>
+    </div>
     <hr style="width:500px" class="w3-opacity">
     <p><thead>
-      Welcome! I am a computer scientist with a focus on bioinformatics. Computationally I specialize in
-      Artifical Intelligence(AI), using and developing greater knowledge in machine learning, data mining,
-      natural language processing and other statistical computing techniques. Using such algorithms I believe
-      we can find solutions in science and answer other great questions.</thead>
+      Hey! I am a computer scientist with a focus in bioinformatics. I specialize in statistical
+      computing and machine learning. Using artifical intelligence I believe
+      we can find solutions in science, as well as answer and model other great questions. Through
+      research and application of scienfitic computing I seek to find, model and understand patterns. <br><br>
+      I have always thought and approached situations in a modular fashion and feel that computer science found me.
+      With an interest in nature, logic and computation, the fields of computer science and bioinformatics have felt like a
+      natural fit for me.<br><br>
+      I consider myself an existentialist in that I emphaize personal existence, freedom and choice. Thererefore I think
+      we have to define our own meaning and try to make rational decisions and as a product of this I place a lot of responisibility in myself
+      and continue to work on self-improvement.
+      <br><br>
+      I also enjoy reading, playing games, philosophy, riding horses, and being around animals and in nature. Thanks for coming to my page.
+          </thead>
     </p>
 
     <!-- CV -->
